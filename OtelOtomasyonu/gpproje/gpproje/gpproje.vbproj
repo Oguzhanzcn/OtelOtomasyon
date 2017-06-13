@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{553CD7F8-A4DA-417C-BE49-90DD971CF47F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>gpproje.My.MyApplication</StartupObject>
+    <RootNamespace>gpproje</RootNamespace>
+    <AssemblyName>gpproje</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>gpproje.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>gpproje.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.8.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="adminekle.Designer.vb">
+      <DependentUpon>adminekle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="adminekle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admingiris.Designer.vb">
+      <DependentUpon>admingiris.vb</DependentUpon>
+    </Compile>
+    <Compile Include="admingiris.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="anamenuscript.Designer.vb">
+      <DependentUpon>anamenuscript.vb</DependentUpon>
+    </Compile>
+    <Compile Include="anamenuscript.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="basvurulistesi.Designer.vb">
+      <DependentUpon>basvurulistesi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="basvurulistesi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="calisanlistesi.Designer.vb">
+      <DependentUpon>calisanlistesi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="calisanlistesi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kontrol.vb" />
+    <Compile Include="Musteri.vb" />
+    <Compile Include="musterisec.Designer.vb">
+      <DependentUpon>musterisec.vb</DependentUpon>
+    </Compile>
+    <Compile Include="musterisec.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Oda.vb" />
+    <Compile Include="degerlendirmeler.Designer.vb">
+      <DependentUpon>degerlendirmeler.vb</DependentUpon>
+    </Compile>
+    <Compile Include="degerlendirmeler.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="degerlendirmeyap.Designer.vb">
+      <DependentUpon>degerlendirmeyap.vb</DependentUpon>
+    </Compile>
+    <Compile Include="degerlendirmeyap.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hakkimizda.Designer.vb">
+      <DependentUpon>hakkimizda.vb</DependentUpon>
+    </Compile>
+    <Compile Include="hakkimizda.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="isbasvurulari.Designer.vb">
+      <DependentUpon>isbasvurulari.vb</DependentUpon>
+    </Compile>
+    <Compile Include="isbasvurulari.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="musteribilgileri.Designer.vb">
+      <DependentUpon>musteribilgileri.vb</DependentUpon>
+    </Compile>
+    <Compile Include="musteribilgileri.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="odaayarlari.Designer.vb">
+      <DependentUpon>odaayarlari.vb</DependentUpon>
+    </Compile>
+    <Compile Include="odaayarlari.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="odabilgileri.Designer.vb">
+      <DependentUpon>odabilgileri.vb</DependentUpon>
+    </Compile>
+    <Compile Include="odabilgileri.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="odakayit.Designer.vb">
+      <DependentUpon>odakayit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="odakayit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="personel.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="adminekle.resx">
+      <DependentUpon>adminekle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admingiris.resx">
+      <DependentUpon>admingiris.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="anamenuscript.resx">
+      <DependentUpon>anamenuscript.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="basvurulistesi.resx">
+      <DependentUpon>basvurulistesi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="calisanlistesi.resx">
+      <DependentUpon>calisanlistesi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="degerlendirmeler.resx">
+      <DependentUpon>degerlendirmeler.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="degerlendirmeyap.resx">
+      <DependentUpon>degerlendirmeyap.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hakkimizda.resx">
+      <DependentUpon>hakkimizda.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="isbasvurulari.resx">
+      <DependentUpon>isbasvurulari.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="musteribilgileri.resx">
+      <DependentUpon>musteribilgileri.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="musterisec.resx">
+      <DependentUpon>musterisec.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="odaayarlari.resx">
+      <DependentUpon>odaayarlari.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="odabilgileri.resx">
+      <DependentUpon>odabilgileri.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="odakayit.resx">
+      <DependentUpon>odakayit.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonred.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonyellow1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonred1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hotel-icon-8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hakkimizda.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hakkimizdatelefon.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hakkimizdafaks.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yildiz1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yildiz11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yildiz22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yildiz33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yildiz44.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yildiz55.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yildiz2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yildiz3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yildiz4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yildiz5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yildiz0.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
